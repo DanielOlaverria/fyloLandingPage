@@ -1,0 +1,563 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mostrar: #f35;
+    --texto: "Revisa tu correo viejo";
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(243, 87%, 12%);
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.encabezado{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logoEmpresa img{
+    width: 80px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu li{
+    display: flex;
+    list-style: none;
+    margin: 0 14px 0 0;
+    font-size: 0.6rem;
+    font-family: 'Raleway', sans-serif;
+    color: hsl(243, 87%, 12%);
+}
+
+.allYourFiles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenAllYourF img{
+    width: 300px;
+    margin: 60px auto 35px;
+}
+
+.parrafoAllYourF{
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.parrafoAllYourF h1{
+    font-size: 1.2rem;
+    padding: 0 8px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.botonesAllYourF{
+    margin: 40px 0 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.suministrarCorreo, .registrarse{
+    width: 82%;
+    margin-bottom: 12px;
+    padding: 8px 0;
+}
+
+.suministrarCorreo{
+    color: rgba(181, 184, 184, 0.979);
+    padding-left: 10px;
+    font-size: 0.6rem;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+.registrarse{
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+    font-size: 0.6rem;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px gainsboro;
+}
+
+.errorCorreoM{
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    font-size: 0.6rem;
+    color: rgb(148, 3, 3);
+}
+
+
+.parrafo{
+    width: 96%;
+    font-size: 0.6rem;
+    line-height: 1.5;
+}
+
+.stayProductive{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F8FE;
+}
+
+.imagenMobile{
+    width: 100vw;
+    margin-bottom: -20px;
+}
+
+.imagenMobile img{
+    width: 100vw;
+}
+
+.stayProductive img{
+    width: 300px;
+    margin: 100px 0 40px 0;
+}
+
+.parrafoStayP{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.parrafoStayP h1{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.enlace{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F8FE;
+}
+
+.enlaceA{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 40px 0;
+    flex-direction: column;
+}
+
+.enlaceA div{
+    width: 129px;
+    border: 1px solid hsl(170, 45%, 43%);
+}
+
+.enlaceA img{
+    width: 16px;
+    margin: 0 0 0 4px;
+    text-decoration:underline;
+}
+
+.enlaceA a{
+    color: hsl(170, 45%, 43%);
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.comentarioConteiner{
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px rgba(216, 216, 216, 0.699);
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.comentarioConteiner img{
+    width: 12px;
+    margin: 0;
+    padding-top: 0;
+}
+
+.comentario{
+    margin: 0;
+    font-size: 0.5rem;
+}
+
+.avatar{
+    display: flex;
+    margin: 8px 0px 0 0;
+}
+
+.avatar img{
+    width: 25px;
+    border-radius: 50%;
+    margin: 0px 8px 0 0;
+}
+
+.nombreAvatar{
+    font-size: 0.5rem;
+}
+
+.nombreAvatar h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.nombreAvatar h2{
+    font-size: 0.36rem;
+}
+
+.getEarlyAccess{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(240, 75%, 98%);
+
+}
+
+.suministrarCorreo__M{
+    border: none;
+    box-shadow: 0px 1px 4px rgba(32, 32, 32, 0.5);
+}
+
+.registrarse__M{
+box-shadow: 0px 1px 4px rgba(32, 32, 32, 0.5);
+}
+
+.pie{
+    width: 100vw;
+    background-color: hsla(243, 87%, 12%, 0.993);
+    color: hsl(240, 1%, 65%);
+    font-size: 0.6rem;
+}
+
+.imagenFylo{
+    width: 96px;
+    filter: invert(1)
+    saturate(5%)
+    brightness(10);    
+}
+
+.fylo, .infoEmpresa, .contactoEmpresa{
+    margin: 50px 0 0 0;
+    padding-left: 30px;
+}
+
+.telefono{
+    margin: 20px 10px 15px 0;
+}
+
+.telefono img{
+    width: 12px;
+    margin: 0 10px 0 0;
+}
+
+.email img{
+    width: 12px;
+    margin: 0 10px 0 0;
+}
+
+.infoEmpresa, .contactoEmpresa{
+    line-height: 2;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+
+}
+.redes img{
+    width: 18px;
+    border: 1px solid hsl(240, 75%, 98%);
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.twitter{
+    margin: 0 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 769px){
+
+    .contenedor{
+        width: 100%;
+    }
+
+    .encabezado{
+        width: 92%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px 50px 0 50px;
+    }
+
+    .menu li{
+        margin: 0 0 0 14px;
+    }
+
+    .allYourFiles{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .imagenAllYourF img{
+        width: 500px;
+        margin: 60px 50px 60px 0;
+    }
+
+    .parrafoAllYourF{
+        width: 50%;
+        text-align: left;
+        padding: 0 50px;
+   
+    }
+
+    .botonesAllYourF{
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .suministrarCorreo{
+        width: 100%;
+    }
+
+    .registrarse{
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .registrarse:active{
+        background-color: hsl(224, 95%, 62%);
+        cursor: pointer;
+    }
+
+    .registrarse:hover{
+        cursor: pointer;
+    }
+
+    div:active .errorCorreoM{
+        display: flex;
+        align-items: flex-start;
+        color: rgba(148, 3, 3, 0.904);
+        background: none;
+        border: none;
+    }
+
+    div:active .suministrarCorreo{
+        border: 1px solid rgb(156, 77, 77);
+    }
+
+    .imagenMobile img{
+        width: 100%;
+    }
+
+    .stayProductive{
+        width: 100vw;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .stayProductive img{
+        width: 500px;
+        margin: 100px 50px 40px 0;
+    }
+
+    .parrafoStayP{
+        width: 50%;
+        text-align: left;
+        padding: 0 50px;
+        margin: 0;
+    }
+
+   .enlace{
+        align-items: flex-start;
+        padding: 0 0 40px 50px;
+        justify-content: flex-start;
+        margin-top: -14%;
+    }
+
+    .enlaceA{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        margin: 0px 0 50px 0;
+    }
+
+    .getEarlyAccess{
+        flex-direction: row;
+        text-align: left;
+        padding: 40px 0 40px 0px;
+        margin: 0;
+    }
+
+    .botonesGetEarlyA{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-left: 400px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .suministrarCorreo__M{
+        width: 80%;
+        margin:0 0 0px 0;
+    }
+    
+    .registrarse__M{
+        width: 30%;
+        margin: 20px 0 0 0;
+    }
+
+    div:active .errorCorreoGet{
+        display: flex;
+        align-items: flex-start;
+        color: #F8F8FE;
+        background: none;
+        border: none;
+    }
+    
+    .registrarse__M:hover{
+        cursor: pointer;
+        color: #F8F8FE;
+    }
+
+    .registrarse__M:active{
+        cursor: pointer;
+        background-color: hsl(224, 95%, 62%);
+    }
+
+    .pie{
+        display: flex;
+        justify-content: space-between;
+        padding: 55px 40px;
+    }
+
+    .jobs:active{
+        color: hsl(224, 34%, 54%);
+        cursor: pointer;
+    }
+
+    .press:active{
+        color: hsl(224, 34%, 54%);
+        cursor: pointer;
+    }
+
+    .blog:active{
+        color: hsl(224, 34%, 54%);
+        cursor: pointer;
+    }
+
+    .jobs:hover{
+        cursor: pointer;
+    }
+
+    .press:hover{
+        cursor: pointer;
+    }
+
+    .blog:hover{
+        cursor: pointer;
+    }
+
+    .terms:active{
+        color: hsl(224, 34%, 54%);
+        cursor: pointer;
+    }
+
+    .terms:hover{
+        cursor: pointer;
+    }
+
+    .privacy:active{
+        color: hsl(224, 34%, 54%);
+        cursor: pointer;
+    }
+
+    .privacy:hover{
+        cursor: pointer;
+    }
+
+    .fylo, .infoEmpresa, .contactoEmpresa{
+        margin: 0;
+    }
+
+    .redes{
+        margin:0 40px 0 0;
+        align-items: flex-start;
+    }
+
+    .redes img{
+        width: 22px;
+        
+    }
+
+    .facebook:active{
+        background-color: hsl(224, 34%, 54%);
+        border-color: hsl(224, 34%, 54%);
+    }
+
+    .facebook:hover{
+        cursor: pointer;
+    }
+
+    .twitter:active{
+        background-color: hsl(224, 34%, 54%);
+        border-color: hsl(224, 34%, 54%);
+    }
+
+    .twitter:hover{
+        cursor: pointer;
+    }
+
+    .instagram:active{
+        background-color: hsl(224, 34%, 54%);
+        border-color: hsl(224, 34%, 54%);
+    }
+
+    .instagram:hover{
+        cursor: pointer;
+    }
+}
